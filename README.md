@@ -1,33 +1,66 @@
-# vue3_test
+# 微小企业人员管理系统
 
-This template should help get you started developing with Vue 3 in Vite.
+## 一、项目概述
+本系统旨在提升微小企业人员管理效率，涵盖应聘人员搜索与内部人员管理两大核心模块，助力企业优化人员配置，增强竞争力。
 
-## Recommended IDE Setup
+### 1. 背景
+随着企业发展，人员管理复杂度增加，传统方式效率低且易出错。本系统应运而生，通过自动化与信息化手段，优化招聘与管理流程，提高准确性，推动企业资源合理配置。
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+### 2. 项目主要研发内容
+- **应聘人员搜索模块**
+    - **人员推荐**：运用算法，依职位要求推荐候选人，加速招聘进程。
+    - **职位匹配**：自动匹配企业需求与候选人，提升招聘精准度。
+    - **人员搜索**：支持多维度搜索，满足多样化招聘需求。
+- **企业内部员工管理模块**
+    - **人员档案管理**：确保员工信息准确实时更新。
+    - **考勤记录管理**：全面记录考勤信息，提供数据支持。
+    - **项目流程管理**：涵盖项目创建、跟踪与任务分配，保障项目顺利推进。
 
-## Type Support for `.vue` Imports in TS
+### 3. 项目研发目的与意义
+- **提升招聘效率**：借助先进算法，缩短招聘周期，降低成本。
+- **优化人员管理**：系统化管理工具，减少人工误差，提升效率。
+- **增强数据分析能力**：全面分析数据，助力决策科学化。
+- **提高用户体验**：友好界面与流畅操作，增强系统易用性与满意度。
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## 二、系统需求分析
+### 1. 系统总体架构
+采用前后端分离架构，前端基于Vue 3与TypeScript开发，后端用mock数据模拟真实接口，以Pinia管理状态。
+### 2. 功能性需求分析
+- **用户登录**：支持HR与管理员角色登录，依角色授权功能。
+- **人员搜索模块**：按姓名与理想岗位搜索，实时显示结果并推荐人员。
+- **员工管理模块**：可搜索、查看员工详情，分配项目，管理考勤与任务。
+- **项目管理模块**：筛选项目，查看详细信息，管理项目状态。
+### 3. 非功能性需求分析
+- **性能**：快速响应用户操作，页面流畅，支持高并发。
+- **安全性**：确保用户数据安全，防范未授权访问。
+- **可用性**：界面友好，操作简便，提供清晰错误提示。
 
-## Customize configuration
+## 三、系统设计
+### 1. 系统整体实现流程
+- **需求分析**：明确系统功能，确定架构与技术选型。
+- **设计阶段**：涵盖界面、功能模块与数据管理设计，形成设计文档。
+- **实现阶段**：依文档编码，用Vue 3开发前端，Pinia管理状态。
+- **测试阶段**：全面测试，修复问题，优化性能。
+- **上线阶段**：部署生产环境，提供技术支持。
+### 2. 系统功能模块设计
+- **登录模块**：验证用户身份，分配角色权限。
+- **人员搜索模块**：实现搜索与推荐功能。
+- **员工管理模块**：支持员工信息管理与项目分配。
+- **项目管理模块**：具备项目筛选、查看与状态管理功能。
+### 3. 数据库设计
+用JavaScript对象和数组模拟数据，通过Pinia管理员工与项目数据。
+### 4. 前端设计
+利用Element Plus构建登录、人员搜索、员工管理与项目管理界面。
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## 四、系统实现
+### 1. 开发工具
+- Vue 3：构建前端界面。
+- TypeScript：增强代码类型安全与开发效率。
+- Pinia：管理全局状态。
+- Element Plus：创建现代化UI组件。
+- VSCode：开发与编辑代码。
+### 2. 系统主要界面展示
+展示登录、人员搜索、员工管理与项目管理等界面截图，呈现系统功能与操作流程。
 
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
+## 五、项目总结与心得
+本次课程设计深入学习前端开发技术，掌握mock数据使用与状态管理，提升开发技能与问题解决能力，为未来项目开发奠定基础。
